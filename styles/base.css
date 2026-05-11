@@ -1,0 +1,263 @@
+/* ===============================================
+   base.css - Estilos comunes a todo el sitio
+   =============================================== */
+
+/* ---------- GLOBALES ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* ---------- HEADER FIJO ---------- */
+.site-header {
+    background-color: #191919ef;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.2s;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo-header {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ---------- NAVEGACIÓN (escritorio) ---------- */
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+/* Botones cuadrados con diamante */
+.nav-menu li a {
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 0;          /* cuadrados */
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+/* Diamante hueco cuadrado antes del texto */
+.nav-menu li a::before {
+    content: "◊";
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+/* Hover: fondo azul agua + diamante gira 90° */
+.nav-menu li a:hover {
+    background-color: #40e0d0;
+    color: white;
+}
+
+.nav-menu li a:hover::before {
+    transform: rotate(90deg);
+}
+.diamante {
+    color: rgb(218, 56, 151);       
+    font-weight: normal;
+    margin-right: 0.5rem;    
+    font-size: 1rem;
+    display: inline-block;  
+}
+.diamante-b{
+    color: rgb(218, 56, 151);       
+
+}
+/* ---------- MENÚ HAMBURGUESA (móvil) ---------- */
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.5rem;
+    color: white;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.abrir-menu:hover,
+.cerrar-menu:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Breakpoint: pantallas <= 993px */
+@media screen and (max-width: 993px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+    }
+
+    .cerrar-menu {
+        align-self: flex-end;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 300;      /* apariencia más fina */
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #191919dc;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        z-index: 1001;         /* por encima del header */
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        width: min(80%, 300px);
+        overflow-y: auto;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .nav-menu li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+        padding: 0.75rem;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .nav-menu li a:hover {
+        background-color: #40e0d0;
+    }
+
+    /* Bloquear scroll cuando el menú está abierto */
+    body.menu-abierto {
+        overflow: hidden;
+    }
+}
+
+/* ---------- BOTONES MAGENTA (base) ---------- */
+/* Botón genérico magenta cuadrado */
+.btn {
+    display: inline-block;
+    background-color: rgb(251, 68, 175);
+    color: #ffffff;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0;          /* cuadrado */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-align: center;
+}
+.btn.btn {
+    display: inline-block;
+    background-color: rgb(251, 68, 175);
+    color: #ffffff;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0;          /* cuadrado */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(218, 56, 151);
+    transform: scale(1.02);
+}
+
+/* Variante primary (mismo estilo, útil para consistencia) */
+.btn-primary {
+    background-color: rgb(251, 68, 175);
+    color: white;
+}
+.btn.btn-primary {
+    background-color: rgb(251, 68, 175);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: rgb(218, 56, 151);
+    transform: scale(1.02);
+}
+.btn.btn-primary:hover {
+    background-color: rgb(218, 56, 151);
+    transform: scale(1.02);
+}
+
+/* Botón especial para descarga de CV (puede tener icono) */
+.btn-download {
+    background-color: rgb(251, 68, 175);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+}
+
+.btn-download:hover {
+    background-color: rgb(218, 56, 151);
+    transform: scale(1.02);
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+    background-color: #000000c9;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* ---------- UTILIDADES ---------- */
+.text-center {
+    text-align: center;
+}

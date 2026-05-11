@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis David | Inicio</title>
+    <!-- CSS base (común a todo el sitio) -->
+    <link rel="stylesheet" href="/styles/base.css">
+    <!-- CSS específico de la página de inicio -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo-header">Desarrollador Java Full Stack</div>
+            <button class="abrir-menu" aria-label="Abrir menú">☰</button>
+            <nav class="nav">
+                <button class="cerrar-menu" aria-label="Cerrar menú">×</button>
+                <ul class="nav-menu">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero con imagen de fondo -->
+        <section class="hero-section" style="background-image: url('/assets/hero.jpeg');">
+            <div class="container">
+                <h1>¡Bienvenido!</h1>
+                <p>Soy Luis David Montealegre – Desarrollador Java Full Stack Jr.</p>
+            </div>
+        </section>
+
+        <!-- Sección detallada de Acerca de mí (ancla) -->
+        <section id="about-detalle" class="about-section">
+            <div class="container">
+                <div class="about-header text-center">
+                    <h2>Acerca de mí</h2>
+                    <p class="lead">Conoce un poco más sobre mi trayectoria y pasiones</p>
+                </div>
+                <div class="row align-items-center g-5">
+                    <div class="col-md-5">
+                        <img src="/assets/Me.jpg" alt="Mi foto" class="img-fluid rounded-circle shadow">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Hola, soy Luis David Montealegre Hernández</h3>
+                        <p>Ingeniero en Sistemas Computacionales con experiencia en análisis, diseño y desarrollo de
+                            aplicaciones. Tengo conocimientos sólidos en Java (POO, backend, aplicaciones desktop),
+                            manejo de SQL y modelado de bases de datos.</p>
+                        <p>Aplico ingeniería de prompts para tareas de extracción, clasificación y procesamiento de
+                            datos, con un enfoque ético. Manejo metodologías ágiles como Scrum para liderar proyectos
+                            que mejoran la productividad, el control y la seguridad.</p>
+                        <p>Actualmente estoy finalizando un bootcamp de Desarrollo Java Full Stack y busco nuevas
+                            oportunidades para aportar valor.</p>
+                        <div class="mt-4">
+                            <a href="/pages/contacto.html" class="btn btn-primary">Contáctame</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 pt-4">
+                    <div class="col-md-6">
+                        <h3><span class="diamante-b">◆</span> Mis intereses / Habilidades blandas</h3>
+                        <ul class="list-unstyled">
+                            <li><span class="diamante">◊</span> Resolución de problemas</li>
+                            <li><span class="diamante">◊</span> Adaptabilidad e inteligencia emocional</li>
+                            <li><span class="diamante">◊</span> Trabajo en equipo y liderazgo</li>
+                            <li><span class="diamante">◊</span> Proactividad y comunicación efectiva</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3><span class="diamante-b">◆</span> Formación / Logros</h3>
+                        <ul class="list-unstyled">
+                            <li><span class="diamante">◊</span> Bootcamp Java Full Stack Jr. | Generation México</li>
+                            <li><span class="diamante">◊</span> Ingeniería en Sistemas Computacionales | TESE</li>
+                            <li><span class="diamante">◊</span> Scrum / Jira – Metodologías ágiles</li>
+                            <li><span class="diamante">◊</span> Ingenieria de prompts (IA)</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección detallada de Habilidades (ancla) -->
+        <section id="skills-detalle" class="skills-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Habilidades técnicas</h2>
+                    <p>Tecnologías y herramientas</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="skill-card">
+                            <h3>Front-end / General</h3>
+                            <ul>
+                                <li>HTML5 / CSS3 / Bootstrap</li>
+                                <li>JavaScript</li>
+                                <li>Responsive Design</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-card">
+                            <h3>Back-end / Bases de datos</h3>
+                            <ul>
+                                <li>Java 17 (POO)</li>
+                                <li>MySQL / SQL Server</li>
+                                <li>Modelado entidad‑relación</li>
+                                <li>XAMPP</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-card">
+                            <h3>Otras herramientas</h3>
+                            <ul>
+                                <li>Git / GitHub</li>
+                                <li>VSCode / NetBeans / IntelliJ</li>
+                                <li>UML / Balsamiq / Figma</li>
+                                <li>Scrum / Jira</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid de tarjetas (enlace a proyectos y a contacto) -->
+        <section class="grid-section">
+            <div class="container">
+                <div class="about-extra mt-5 p-4 bg-light rounded">
+                    <h3 class="text-center">Tambien puedes</h3>
+                    <p class="text-center mb-0">Ver parte de mis proyectos u contactarme directamente</p>
+                </div>
+                <div class="grid">
+                    <!-- Card Proyectos (enlace a página externa) -->
+                    <div class="card">
+                        <div class="custom-card">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-5">
+                                    <img src="/assets/MuebleArte1a.png" alt="Proyectos" class="img-fluid">
+                                </div>
+                                <div class="col-md-7 p-4 p-md-5">
+                                    <h3>Proyectos destacados</h3>
+                                    <div class="card-text">
+                                        <p>Conoce algunos de mis proyectos.</p>
+                                    </div>
+                                    <a href="/pages/proyectos.html" class="btn btn-primary">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Contáctame (enlace a contacto.html) -->
+                    <div class="card">
+                        <div class="custom-card">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-7 order-md-1 p-4 p-md-5">
+                                    <h3>Contáctame</h3>
+                                    <div class="card-text">
+                                        <p>¿Tienes algun comentario? Escríbeme, estoy al tanto.</p>
+                                    </div>
+                                    <a href="/pages/contacto.html" class="btn btn-primary">Contactar</a>
+                                </div>
+                                <div class="col-md-5 order-md-2">
+                                    <img src="/assets/acerca-de.png" alt="Contacto" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 - Luis David Montealegre Hernández</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript propio -->
+    <script src="/scripts/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

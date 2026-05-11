@@ -1,0 +1,270 @@
+/* ===============================================
+   index.css - Estilos específicos de la página de inicio
+   =============================================== */
+
+/* ---------- HERO SECTION ---------- */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding: 4rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Capa oscura para mejorar legibilidad del texto */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+/* ---------- SECCIÓN ACERCA DE MÍ ---------- */
+.about-section {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.about-header {
+    margin-bottom: 3rem;
+}
+
+.about-header h2 {
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.about-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #40e0d0;
+}
+
+.about-header .lead {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.about-section h3 {
+    color: #40e0d0;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.about-section ul li {
+    margin-bottom: 0.75rem;
+}
+
+.about-section .btn-primary {
+    background-color: rgb(251, 68, 175);
+    border: none;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.about-section .btn-primary:hover {
+    background-color: rgb(218, 56, 151);
+    transform: scale(1.02);
+}
+
+/* Imagen de perfil redonda (limitado a about-section para no afectar Bootstrap) */
+.about-section .rounded-circle {
+    border-radius: 50% !important;
+    object-fit: cover;
+    width: 100%;
+    max-width: 280px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Fondo claro personalizado */
+.about-section .bg-light {
+    background-color: #ecf0f1 !important;
+}
+
+.about-extra {
+    border-radius: 12px;
+}
+
+/* ---------- GRID DE TARJETAS (original) ---------- */
+.grid-section {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 680px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.08);
+    margin-bottom: 0.1rem;
+    padding-bottom: 1px;
+}
+
+
+.card-text {
+    line-height: 1.6;
+}
+
+.card-text p {
+    margin-bottom: 0.75rem;
+}
+
+/* Imágenes dentro de las tarjetas */
+.custom-card img {
+    max-height: 200px;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Centrar verticalmente las columnas de imagen en las tarjetas */
+.custom-card .row .col-md-5,
+.custom-card .row .col-md-5.order-md-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- SECCIÓN HABILIDADES ---------- */
+.skills-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #40e0d0;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.skill-card {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    color: #40e0d0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.skill-card ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+
+.skill-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- RESPONSIVE AJUSTES ---------- */
+@media (max-width: 768px) {
+    .grid {
+        gap: 1rem;
+    }
+    .card {
+        max-width: 100%;
+        margin: 0;
+    }
+    .hero-section {
+        min-height: 300px;
+        padding: 2rem 0;
+    }
+    .about-section .row {
+        text-align: center;
+    }
+    .about-section .rounded-circle {
+        margin-bottom: 1.5rem;
+    }
+    .skill-card {
+        margin-bottom: 1rem;
+    }
+}

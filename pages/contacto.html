@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mi sitio</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo-header">Contactame</div>
+            <button class="abrir-menu" aria-label="Abrir menú">☰</button>
+            <nav class="nav">
+                <button class="cerrar-menu" aria-label="Cerrar menú">×</button>
+                <ul class="nav-menu">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>Ponte en contacto conmigo o descarga mi CV</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="contact-form-wrapper">
+                            <h2>Envíame un mensaje</h2>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="asunto" name="asunto">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                                </div>
+                                <div id="form-message" class="alert" style="display: none;"></div>
+                                <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="personal-info">
+                            <h2>Datos de contacto</h2>
+                            <ul class="info-list">
+                                <li><strong>📧 Email:</strong> <a href="mailto:luisdavidmontealegre@gmail.com">luisdavidmontealegre@gmail.com</a></li>
+                                <li><strong>📱 Teléfono:</strong> 55 2105 1036</li>
+                                <!---<li><strong>🌐 Web:</strong> <a href="/">misitio.com</a></li>--->
+                                <li><strong>📍 Ubicación:</strong> Estado de México, Nezahualcoyotl</li>
+                            </ul>
+                            <div class="social-links">
+                                <h3>Redes sociales</h3>
+                                <a href="https://github.com/LuisDavidMontealegre" class="social-icon">GitHub</a>
+                                <a href="https://www.linkedin.com/in/luisdmh/" class="social-icon">LinkedIn</a>
+                            </div>
+                            <div class="cv-download mt-4">
+                                <h3>Descargar CV</h3>
+                                <p>Obtén una copia de mi currículum.</p>
+                                <a href="/assets/cv-ldmh.pdf" download="cv-ldmh.pdf" class="btn btn-download">📄 Descargar CV (PDF)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 - Luis David Montealegre Hernández</p>
+        </div>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

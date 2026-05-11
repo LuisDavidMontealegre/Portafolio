@@ -1,0 +1,205 @@
+/* ===============================================
+   contacto.css - Estilos específicos de la página de contacto
+   =============================================== */
+
+.page-header {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.page-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.contact-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.contact-form-wrapper h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+.contact-form-wrapper h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #40e0d0;
+}
+
+.contact-form .form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.contact-form .form-control {
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    padding: 0.75rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.contact-form .form-control:focus {
+    border-color: #40e0d0;
+    box-shadow: 0 0 0 0.2rem rgba(64, 224, 208, 0.25);
+    outline: none;
+}
+.contact-form .btn-primary {
+    background-color: rgb(251, 68, 175);
+    border: none;
+    border-radius: 0;
+    padding: 0.75rem;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.contact-form .btn-primary:hover {
+    background-color: rgb(218, 56, 151);
+    transform: scale(1.01);
+}
+
+.personal-info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+.personal-info h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #40e0d0;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+.info-list li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+.info-list li strong {
+    font-weight: 600;
+    color: #191919;
+}
+.info-list li a {
+    color: #40e0d0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.info-list li a:hover {
+    color: rgb(218, 56, 151);
+    text-decoration: underline;
+}
+
+.social-links h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+.social-icon {
+    display: inline-block;
+    margin-right: 1.2rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid #ced4da;
+    background-color: transparent;
+    color: #191919;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-radius: 0;
+}
+.social-icon:hover {
+    color: #40e0d0;
+    border-color: #40e0d0;
+    transform: translateY(-2px);
+}
+
+.cv-download h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.cv-download p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+.btn-download {
+    display: inline-block;
+    background-color: rgb(251, 68, 175);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 0;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+.btn-download:hover {
+    background-color: rgb(218, 56, 151);
+    transform: scale(1.02);
+    color: white;
+}
+
+/* Notificaciones */
+#form-message {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s;
+}
+#form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+#form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+@media (max-width: 993px) {
+    .contact-section { padding: 2rem 0; }
+    .personal-info { margin-top: 2rem; }
+    .contact-form-wrapper h2::after,
+    .personal-info h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact-form-wrapper h2,
+    .personal-info h2 {
+        display: block;
+        text-align: center;
+    }
+    .info-list, .social-links, .cv-download { text-align: center; }
+}
+
+@media (max-width: 576px) {
+    .page-header { padding: 2rem 0; }
+    .page-header h1 { font-size: 2rem; }
+    .contact-form-wrapper h2,
+    .personal-info h2 { font-size: 1.5rem; }
+}
