@@ -140,13 +140,24 @@
                     <strong>✅ Resultado del hackathon:</strong> Logramos una plataforma completa y funcional en el tiempo establecido. El proyecto fue presentado con éxito y recibió retroalimentación positiva por su usabilidad, código limpio y diseño responsivo.
                 </div>
 
-                <!-- BOTÓN DE GITHUB -->
-                <div class="text-center mt-4">
-                    <a href="https://github.com/LuisDavidMontealegre/Landing-page-Hackathon.git" target="_blank" class="btn btn-github" style="background-color: #24292e; color: white; border-radius: 0; padding: 0.6rem 1.5rem; display: inline-flex; align-items: center; gap: 0.8rem;">
+                <!-- DOS BOTONES: GitHub y Sitio web (mismo estilo, mismo hover) -->
+                <div class="text-center mt-4" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <!-- Botón GitHub -->
+                    <a href="https://github.com/LuisDavidMontealegre/Landing-page-Hackathon.git" target="_blank"
+                        style="background-color: #24292e; color: white; border: none; border-radius: 0; padding: 0.6rem 1.5rem; display: inline-flex; align-items: center; gap: 0.8rem; text-decoration: none; font-weight: bold; transition: 0.2s;"
+                        onmouseover="this.style.backgroundColor='#40e0d0'; this.style.color='#191919';"
+                        onmouseout="this.style.backgroundColor='#24292e'; this.style.color='white';">
                         <i class="fab fa-github fa-lg"></i> Ver repositorio en GitHub
                     </a>
+                    <!-- Botón Sitio web (mismo estilo, sin borde) -->
+                    <a href="https://landingpagehackathon.netlify.app  
+" target="_blank"
+                        style="background-color: #24292e; color: white; border: none; border-radius: 0; padding: 0.6rem 1.5rem; display: inline-flex; align-items: center; gap: 0.8rem; text-decoration: none; font-weight: bold; transition: 0.2s;"
+                        onmouseover="this.style.backgroundColor='#40e0d0'; this.style.color='#191919';"
+                        onmouseout="this.style.backgroundColor='#24292e'; this.style.color='white';">
+                        <i class="fas fa-globe fa-lg"></i> Visitar sitio web
+                    </a>
                 </div>
-            </div>
 
             <!-- GALERÍA DE CAPTURAS (carrusel) -->
             <div class="carousel-section mt-5">
