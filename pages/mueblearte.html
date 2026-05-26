@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MuebleArte - Proyecto e-commerce de muebles artesanales</title>
+    <!-- ESTILOS GLOBALES Y PLANTILLA -->
     <link rel="stylesheet" href="/styles/base.css">
-    <link rel="stylesheet" href="/styles/mueblearte.css">
+    <link rel="stylesheet" href="/styles/plantilla-proyecto.css">
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- FONTAWESOME PARA EL LOGO DE GITHUB -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/assets/icon.png">
 </head>
 
 <body>
+    <!-- ================= HEADER ================= -->
     <header class="site-header">
         <div class="container">
             <div class="logo-header">MuebleArte</div>
@@ -29,6 +34,7 @@
     </header>
 
     <main>
+        <!-- ================= CABECERA DEL PROYECTO ================= -->
         <div class="project-header">
             <div class="container">
                 <div class="logo-title-wrapper">
@@ -49,12 +55,11 @@
         </div>
 
         <div class="container">
-            <!-- Contexto del proyecto: imagen a la izquierda (segunda imagen) -->
+            <!-- ================= CONTEXTO DEL PROYECTO (Imagen izquierda) ================= -->
             <div class="project-context">
                 <div class="row align-items-center g-5">
                     <div class="col-md-5 order-md-1">
-                        <!-- Imagen del logo -->
-                        <img src="/assets/logo.png" alt="Logo MuebleArte" class="logo-empresa">
+                        <img src="/assets/muebleArte/logo.png" alt="Logo MuebleArte" class="logo-empresa">
                     </div>
                     <div class="col-md-7 order-md-2">
                         <h2>📌 Contexto del proyecto</h2>
@@ -73,7 +78,7 @@
                 </div>
             </div>
 
-            <!-- Mi rol y responsabilidades (imagen a la derecha) -->
+            <!-- ================= MI ROL Y RESPONSABILIDADES (Imagen derecha) ================= -->
             <div class="project-info mt-5">
                 <div class="row align-items-center g-5">
                     <div class="col-md-7">
@@ -90,13 +95,13 @@
                         </ul>
                     </div>
                     <div class="col-md-5">
-                        <img src="/assets/MuebleArte1.png"
-                            alt="Captura de la página principal de MuebleArte" class="img-fluid shadow rounded">
+                        <img src="/assets/MuebleArte/muebleArte1a.png" alt="Captura de la página principal de MuebleArte"
+                            class="img-fluid shadow rounded">
                     </div>
                 </div>
             </div>
 
-            <!-- Stack tecnológico -->
+            <!-- ================= STACK TECNOLÓGICO ================= -->
             <div class="tech-stack mt-5">
                 <h2 class="text-center mb-4">⚙️ Stack tecnológico</h2>
                 <div class="row g-4">
@@ -124,7 +129,7 @@
                 </div>
             </div>
 
-            <!-- Funcionalidades clave -->
+            <!-- ================= FUNCIONALIDADES CLAVE + RESULTADO + BOTÓN GITHUB ================= -->
             <div class="features-results mt-5">
                 <h2 class="text-center mb-3">🎯 Funcionalidades implementadas</h2>
                 <div class="row">
@@ -148,10 +153,18 @@
                     <strong>✅ Resultado:</strong> Se logró una plataforma funcional que reemplazó procesos manuales,
                     aumentando la productividad y el control del negocio. Lista para desplegar en la nube.
                 </div>
+
+                <!-- BOTÓN DE GITHUB (estilo inline para consistencia) -->
+                <div class="text-center mt-4">
+                    <a href="https://github.com/los-cazaprogramas/MuebleArte.git" target="_blank"
+                        class="btn btn-github"
+                        style="background-color: #24292e; color: white; border-radius: 0; padding: 0.6rem 1.5rem; display: inline-flex; align-items: center; gap: 0.8rem; text-decoration: none;">
+                        <i class="fab fa-github fa-lg"></i> Ver repositorio en GitHub
+                    </a>
+                </div>
             </div>
 
-
-  <!-- Carrusel de capturas de pantalla (original) -->
+            <!-- ================= GALERÍA DE CAPTURAS (Carrusel) ================= -->
             <div class="carousel-section mt-5">
                 <h2 class="text-center mb-4">📸 Galería del proyecto</h2>
                 <div id="projectCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -164,32 +177,32 @@
                         <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active"><img src="/assets/MuebleArte1.png" class="d-block w-100"
-                                alt="Conocenos">
+                        <div class="carousel-item active">
+                            <img src="/assets/muebleArte/MuebleArte1.png" class="d-block w-100" alt="Conocenos">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>Conócenos – Misión, Visión y Valores</p>
                             </div>
                         </div>
-                        <div class="carousel-item"><img src="/assets/MuebleArte2.png" class="d-block w-100"
-                                alt="Pagina principal">
+                        <div class="carousel-item">
+                            <img src="/assets/muebleArte/MuebleArte2.png" class="d-block w-100" alt="Pagina principal">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>Pagina principal – Hero y catalogo rápido</p>
                             </div>
                         </div>
-                        <div class="carousel-item"><img src="/assets/MuebleArte3.png" class="d-block w-100"
-                                alt="Contactanos">
+                        <div class="carousel-item">
+                            <img src="/assets/muebleArte/MuebleArte3.png" class="d-block w-100" alt="Contactanos">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>Contactanos – Información de contacto y mapa</p>
                             </div>
                         </div>
-                        <div class="carousel-item"><img src="/assets/MuebleArte4.png" class="d-block w-100"
-                                alt="Contactanos">
+                        <div class="carousel-item">
+                            <img src="/assets/muebleArte/MuebleArte4.png" class="d-block w-100" alt="Contactanos">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>Formulario email – Mandanos un mensaje</p>
                             </div>
                         </div>
-                        <div class="carousel-item"><img src="/assets/MuebleArte5.png" class="d-block w-100"
-                                alt="Pasarela">
+                        <div class="carousel-item">
+                            <img src="/assets/muebleArte/MuebleArte5.png" class="d-block w-100" alt="Pasarela">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>Responsivo – Menu plegable</p>
                             </div>
@@ -202,9 +215,7 @@
                 </div>
             </div>
 
-
-
-            <!-- 🔹 CARRUSEL DEL EQUIPO (con estilos de base.css) -->
+            <!-- ================= EQUIPO DE TRABAJO (carrusel) ================= -->
             <div class="team-section mt-5">
                 <h2 class="text-center mb-4">👥 Colaboradores "Los Cazaprogramas"</h2>
                 <div id="carouselEquipo" class="carousel slide" data-bs-ride="carousel">
@@ -216,8 +227,7 @@
                                     <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card-team text-center">
                                             <div class="img-wrapper">
-                                                <img src="/assets/cazaprogramas-team/alan-foto.jpeg"
-                                                    alt="Alan Carrillo">
+                                                <img src="/assets/cazaprogramas-team/alan-foto.jpeg" alt="Alan Carrillo">
                                             </div>
                                             <div class="card-body">
                                                 <h5>Alan Carrillo Morin</h5>
@@ -236,8 +246,8 @@
                                             <div class="card-body">
                                                 <h5>Carlos Enrique Cruz Guerrero</h5>
                                                 <p class="text-muted">Desarrollador Java Full Stack</p>
-                                                <a href="https://www.linkedin.com/in/carlosenriquecruz/" target="_blank"
-                                                    class="btn btn-primary btn-sm">LinkedIn</a>
+                                                <a href="https://www.linkedin.com/in/carlosenriquecruz/"
+                                                    target="_blank" class="btn btn-primary btn-sm">LinkedIn</a>
                                             </div>
                                         </div>
                                     </div>
@@ -312,8 +322,8 @@
                                             <div class="card-body">
                                                 <h5>Mauricio Saúl Ortega Jiménez</h5>
                                                 <p class="text-muted">Desarrollador Java Full Stack</p>
-                                                <a href="https://www.linkedin.com/in/mauricio-ortegaj" target="_blank"
-                                                    class="btn btn-primary btn-sm">LinkedIn</a>
+                                                <a href="https://www.linkedin.com/in/mauricio-ortegaj"
+                                                    target="_blank" class="btn btn-primary btn-sm">LinkedIn</a>
                                             </div>
                                         </div>
                                     </div>
@@ -349,21 +359,21 @@
                 </div>
             </div>
 
-          
-
-            <!-- Botón de regreso -->
+            <!-- ================= BOTÓN DE REGRESO ================= -->
             <div class="text-center mt-5">
                 <a href="/pages/proyectos.html" class="btn btn-back">← Volver a todos los proyectos</a>
             </div>
         </div>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 - Luis David Montealegre Hernández · Proyecto MuebleArte</p>
         </div>
     </footer>
 
+    <!-- SCRIPTS -->
     <script src="/scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

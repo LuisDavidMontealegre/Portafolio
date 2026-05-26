@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos | Mi sitio</title>
-    <!-- CSS base (común a todo el sitio) -->
     <link rel="stylesheet" href="/styles/base.css">
-    <!-- CSS específico de la página de proyectos -->
     <link rel="stylesheet" href="/styles/proyectos.css">
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="/assets/icon.png">
@@ -19,11 +16,8 @@
     <header class="site-header">
         <div class="container">
             <div class="logo-header">Mis Proyectos</div>
-            <!-- Botón que abre el menú (visible solo en móvil) -->
             <button class="abrir-menu" aria-label="Abrir menú">☰</button>
-            <!-- Menú de navegación -->
             <nav class="nav">
-                <!-- Botón para cerrar el menú (visible solo en móvil) -->
                 <button class="cerrar-menu" aria-label="Cerrar menú">×</button>
                 <ul class="nav-menu">
                     <li><a href="/index.html">Inicio</a></li>
@@ -35,7 +29,6 @@
     </header>
 
     <main class="main-content">
-        <!-- Cabecera de página -->
         <section class="page-header">
             <div class="container">
                 <h1>Mis proyectos</h1>
@@ -43,29 +36,48 @@
             </div>
         </section>
 
-        <!-- Grid de proyectos (placeholder) -->
+        <!-- ========== SECCIÓN: EN PROCESO ========== -->
         <section class="proyectos-section">
             <div class="container">
                 <div class="section-header text-center">
-                    <h2>En proceso</h2>
-                    <p>Proyectos y novedades en desarrollo</p>
+                    <h2>⚙️ En proceso</h2>
+                    <p>Proyectos en desarrollo activo</p>
                 </div>
                 <div class="proyectos-grid">
-                    <!-- Proyecto 1 -->
+                    <!-- Proyecto MuebleArte (en proceso) -->
                     <div class="proyecto-card">
                         <div class="proyecto-img">
-                            <img src="/assets/logo.png" alt="Proyecto 1" class="img-fluid">
+                            <img src="/assets/muebleArte/logo.png" alt="Logo MuebleArte" class="img-fluid">
                         </div>
                         <div class="proyecto-info">
                             <h3>MuebleArte</h3>
-                            <p>Desarrollo de una ecommerce para la empresa MuebleArte</p>
+                            <p>E-commerce de muebles artesanales con backend en Java (Spring Boot) y MySQL. En desarrollo continuo.</p>
                             <a href="/pages/mueblearte.html" class="btn btn-primary">Ver más</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-
-
-
+        <!-- ========== SECCIÓN: TERMINADOS ========== -->
+        <section class="proyectos-section mt-5">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>✅ Terminados</h2>
+                    <p>Proyectos completados y funcionales</p>
+                </div>
+                <div class="proyectos-grid">
+                    <!-- Proyecto MBM Sports (hackathon finalizado) -->
+                    <div class="proyecto-card">
+                        <div class="proyecto-img">
+                            <img src="/assets/mbm/MBM-Logo.png" alt="Logo MBM Sports" class="img-fluid">
+                        </div>
+                        <div class="proyecto-info">
+                            <h3>MBM Sports</h3>
+                            <p>Landing page e-commerce para artículos deportivos – Hackathon. Front-end con HTML, CSS, JS y localStorage.</p>
+                            <a href="/pages/mbm.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -77,9 +89,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript propio -->
     <script src="/scripts/script.js"></script>
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
