@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- ================= HEADER ================= -->
     <header class="site-header">
         <div class="container">
             <div class="logo-header">Desarrollador Java Full Stack</div>
@@ -32,7 +33,7 @@
     </header>
 
     <main class="main-content">
-        <!-- Hero con imagen de fondo -->
+        <!-- ================= HERO SECTION ================= -->
         <section class="hero-section" style="background-image: url('/assets/hero.jpeg');">
             <div class="container">
                 <h1>¡Bienvenido!</h1>
@@ -40,7 +41,7 @@
             </div>
         </section>
 
-        <!-- Sección detallada de Acerca de mí (ancla) -->
+        <!-- ================= ACERCA DE MÍ ================= -->
         <section id="about-detalle" class="about-section">
             <div class="container">
                 <div class="about-header text-center">
@@ -82,52 +83,66 @@
                             <li><span class="diamante">◊</span> Bootcamp Java Full Stack Jr. | Generation México</li>
                             <li><span class="diamante">◊</span> Ingeniería en Sistemas Computacionales | TESE</li>
                             <li><span class="diamante">◊</span> Scrum / Jira – Metodologías ágiles</li>
-                            <li><span class="diamante">◊</span> Ingenieria de prompts (IA)</li>
-
+                            <li><span class="diamante">◊</span> Ingeniería de prompts (IA)</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección detallada de Habilidades (ancla) -->
+        <!-- ================= HABILIDADES TÉCNICAS ================= -->
         <section id="skills-detalle" class="skills-section">
             <div class="container">
                 <div class="section-header text-center">
                     <h2>Habilidades técnicas</h2>
-                    <p>Tecnologías y herramientas</p>
+                    <p>Tecnologías, metodologías y herramientas que domino</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-md-4">
+                    <!-- Tarjeta 1: Front-end -->
+                    <div class="col-md-6 col-lg-3">
                         <div class="skill-card">
-                            <h3>Front-end / General</h3>
+                            <h3>Front-end</h3>
                             <ul>
-                                <li>HTML5 / CSS3 / Bootstrap</li>
-                                <li>JavaScript</li>
-                                <li>Responsive Design</li>
+                                <li>HTML5 / CSS3 / Bootstrap 5</li>
+                                <li>JavaScript (ES6)</li>
                                 <li>Node.js</li>
+                                <li>Responsive Design</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- Tarjeta 2: Diseño UX/UI -->
+                    <div class="col-md-6 col-lg-3">
                         <div class="skill-card">
-                            <h3>Back-end / Bases de datos</h3>
+                            <h3>Diseño UX / UI</h3>
+                            <ul>
+                                <li>Figma</li>
+                                <li>Balsamiq</li>
+                                <li>Prototipado e Wireframes</li>
+                                <li>Diagramas UML</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3: Back-end & Bases de Datos -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-card">
+                            <h3>Back-end & DB</h3>
                             <ul>
                                 <li>Java 17 (POO)</li>
-                                <li>MySQL / SQL Server</li>
-                                <li>Modelado entidad‑relación</li>
-                                <li>XAMPP</li>
+                                <li>Spring Boot / JPA / MVC</li>
+                                <li>MySQL / SQL Server / PHP</li>
+                                <li>Modelado Entidad‑Relación</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- Tarjeta 4: Herramientas & Gestión -->
+                    <div class="col-md-6 col-lg-3">
                         <div class="skill-card">
-                            <h3>Otras herramientas</h3>
+                            <h3>Gestión & Herramientas</h3>
                             <ul>
                                 <li>Git / GitHub</li>
-                                <li>VSCode / NetBeans / IntelliJ</li>
-                                <li>UML / Balsamiq / Figma</li>
-                                <li>Scrum / Jira</li>
+                                <li>Agile / Scrum / Jira</li>
+                                <li>Postman / XAMPP</li>
+                                <li>VSCode / IntelliJ / NetBeans</li>
                             </ul>
                         </div>
                     </div>
@@ -135,15 +150,15 @@
             </div>
         </section>
 
-        <!-- Grid de tarjetas (enlace a proyectos y a contacto) -->
+        <!-- ================= GRID DE TARJETAS DE ENLACE ================= -->
         <section class="grid-section">
             <div class="container">
                 <div class="about-extra mt-5 p-4 bg-light rounded">
-                    <h3 class="text-center">Tambien puedes</h3>
-                    <p class="text-center mb-0">Ver parte de mis proyectos u contactarme directamente</p>
+                    <h3 class="text-center">También puedes</h3>
+                    <p class="text-center mb-0">Ver parte de mis proyectos o contactarme directamente</p>
                 </div>
                 <div class="grid">
-                    <!-- Card Proyectos (enlace a página externa) -->
+                    <!-- Card Proyectos -->
                     <div class="card">
                         <div class="custom-card">
                             <div class="row g-0 align-items-center">
@@ -160,14 +175,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card Contáctame (enlace a contacto.html) -->
+                    <!-- Card Contáctame -->
                     <div class="card">
                         <div class="custom-card">
                             <div class="row g-0 align-items-center">
                                 <div class="col-md-7 order-md-1 p-4 p-md-5">
                                     <h3>Contáctame</h3>
                                     <div class="card-text">
-                                        <p>¿Tienes algun comentario? Escríbeme, estoy al tanto.</p>
+                                        <p>¿Tienes algún comentario? Escríbeme, estoy al tanto.</p>
                                     </div>
                                     <a href="/pages/contacto.html" class="btn btn-primary">Contactar</a>
                                 </div>
@@ -182,6 +197,7 @@
         </section>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 - Luis David Montealegre Hernández</p>

@@ -14,6 +14,56 @@
     <!-- FONTAWESOME PARA EL LOGO DE GITHUB -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+
+    <!-- ESTILOS PERSONALIZADOS PARA EL ENCUADRE DE CAPTURAS -->
+    <style>
+        /* Contenedor del carrusel: Evita saltos de página fijando una altura uniforme */
+        #projectCarousel .carousel-inner {
+            max-height: 500px;
+            background-color: #1a1a1a;
+            /* Fondo oscuro estético para rellenar los bordes vacíos */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Ajuste de imágenes: Forza a que se muestren completas sin deformarse */
+        .carousel-capture-img {
+            height: 500px;
+            width: auto;
+            object-fit: contain;
+            /* Encaja la captura completa dentro del recuadro */
+        }
+
+        /* Ajuste responsivo para pantallas pequeñas (Celulares) */
+        @media (max-width: 768px) {
+
+            #projectCarousel .carousel-inner,
+            .carousel-capture-img {
+                height: 320px;
+                /* Reduce la altura en móviles para que no ocupe toda la pantalla */
+            }
+        }
+
+        /* Mejora visual para los textos flotantes sobre fondo oscuro */
+        #projectCarousel .carousel-caption {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+            width: auto;
+            max-width: 80%;
+        }
+
+        #projectCarousel .carousel-caption p {
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -55,7 +105,7 @@
         </div>
 
         <div class="container">
-            <!-- ================= CONTEXTO DEL PROYECTO (Imagen izquierda) ================= -->
+            <!-- ================= CONTEXTO DEL PROYECTO ================= -->
             <div class="project-context">
                 <div class="row align-items-center g-5">
                     <div class="col-md-5 order-md-1">
@@ -78,7 +128,7 @@
                 </div>
             </div>
 
-            <!-- ================= MI ROL Y RESPONSABILIDADES (Imagen derecha) ================= -->
+            <!-- ================= MI ROL Y RESPONSABILIDADES ================= -->
             <div class="project-info mt-5">
                 <div class="row align-items-center g-5">
                     <div class="col-md-7">
@@ -95,8 +145,8 @@
                         </ul>
                     </div>
                     <div class="col-md-5">
-                        <img src="/assets/MuebleArte/muebleArte1a.png" alt="Captura de la página principal de MuebleArte"
-                            class="img-fluid shadow rounded">
+                        <img src="/assets/MuebleArte/muebleArte1a.png"
+                            alt="Captura de la página principal de MuebleArte" class="img-fluid shadow rounded">
                     </div>
                 </div>
             </div>
@@ -129,7 +179,7 @@
                 </div>
             </div>
 
-            <!-- ================= FUNCIONALIDADES CLAVE + RESULTADO + BOTÓN GITHUB ================= -->
+            <!-- ================= FUNCIONALIDADES CLAVE ================= -->
             <div class="features-results mt-5">
                 <h2 class="text-center mb-3">🎯 Funcionalidades implementadas</h2>
                 <div class="row">
@@ -154,19 +204,19 @@
                     aumentando la productividad y el control del negocio. Lista para desplegar en la nube.
                 </div>
 
-                <!-- DOS BOTONES: GitHub y Sitio web (mismo estilo, mismo hover) -->
-                <div class="text-center mt-4" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                    <!-- Botón GitHub -->
+                <!-- BOTÓN REPOSITORIO -->
+                <div class="text-center mt-4"
+                    style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
                     <a href="https://github.com/los-cazaprogramas/MuebleArte.git" target="_blank"
                         style="background-color: #24292e; color: white; border: none; border-radius: 0; padding: 0.6rem 1.5rem; display: inline-flex; align-items: center; gap: 0.8rem; text-decoration: none; font-weight: bold; transition: 0.2s;"
                         onmouseover="this.style.backgroundColor='#40e0d0'; this.style.color='#191919';"
                         onmouseout="this.style.backgroundColor='#24292e'; this.style.color='white';">
                         <i class="fab fa-github fa-lg"></i> Ver repositorio en GitHub
                     </a>
-
                 </div>
+            </div>
 
-            <!-- ================= GALERÍA DE CAPTURAS (Carrusel) ================= -->
+            <!-- ================= GALERÍA DE CAPTURAS (Carrusel corregido) ================= -->
             <div class="carousel-section mt-5">
                 <h2 class="text-center mb-4">📸 Galería del proyecto</h2>
                 <div id="projectCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -177,47 +227,81 @@
                         <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
                         <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"></button>
                         <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="6"></button>
+                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="7"></button>
+
                     </div>
                     <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="/assets/muebleArte/Home.png" class="d-block mx-auto carousel-capture-img"
+                                alt="Pagina principal">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Página principal – Hero y catálogo rápido</p>
+                            </div>
+                        </div>
                         <div class="carousel-item active">
-                            <img src="/assets/muebleArte/MuebleArte1.png" class="d-block w-100" alt="Conocenos">
+                            <img src="/assets/muebleArte/Register.png" class="d-block mx-auto carousel-capture-img"
+                                alt="Conocenos">
                             <div class="carousel-caption d-none d-md-block">
-                                <p>Conócenos – Misión, Visión y Valores</p>
+                                <p>Registrar usuario – Crea una cuenta</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/assets/muebleArte/MuebleArte2.png" class="d-block w-100" alt="Pagina principal">
+                            <img src="/assets/muebleArte/Login.png" class="d-block mx-auto carousel-capture-img"
+                                alt="Pagina principal">
                             <div class="carousel-caption d-none d-md-block">
-                                <p>Pagina principal – Hero y catalogo rápido</p>
+                                <p>Iniciar sesión – Entra a tu sesión</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/assets/muebleArte/MuebleArte3.png" class="d-block w-100" alt="Contactanos">
+                            <img src="/assets/muebleArte/contactanos.png" class="d-block mx-auto carousel-capture-img"
+                                alt="Contactanos">
                             <div class="carousel-caption d-none d-md-block">
-                                <p>Contactanos – Información de contacto y mapa</p>
+                                <p>Contáctanos – Información de contacto y mapa</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/assets/muebleArte/MuebleArte4.png" class="d-block w-100" alt="Contactanos">
+                            <img src="/assets/muebleArte/MuebleArte4.png" class="d-block mx-auto carousel-capture-img"
+                                alt="Contactanos">
                             <div class="carousel-caption d-none d-md-block">
-                                <p>Formulario email – Mandanos un mensaje</p>
+                                <p>Formulario email – Mándanos un mensaje</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/assets/muebleArte/MuebleArte5.png" class="d-block w-100" alt="Pasarela">
+                            <img src="/assets/muebleArte/Menu plegable.png" class="d-block mx-auto carousel-capture-img"
+                                alt="Pasarela">
                             <div class="carousel-caption d-none d-md-block">
-                                <p>Responsivo – Menu plegable</p>
+                                <p>Responsivo – Menú plegable</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/muebleArte/admin.png" class="d-block mx-auto carousel-capture-img"
+                                alt="Pasarela">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Admin – Panel de administración</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/muebleArte/añadir producto.png"
+                                class="d-block mx-auto carousel-capture-img" alt="Pasarela">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Admin – Nuevo producto</p>
                             </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
-                        data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
-                        data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </div>
 
-            <!-- ================= EQUIPO DE TRABAJO (carrusel) ================= -->
+            <!-- ================= EQUIPO DE TRABAJO ================= -->
             <div class="team-section mt-5">
                 <h2 class="text-center mb-4">👥 Colaboradores "Los Cazaprogramas"</h2>
                 <div id="carouselEquipo" class="carousel slide" data-bs-ride="carousel">
@@ -229,7 +313,8 @@
                                     <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card-team text-center">
                                             <div class="img-wrapper">
-                                                <img src="/assets/cazaprogramas-team/alan-foto.jpeg" alt="Alan Carrillo">
+                                                <img src="/assets/cazaprogramas-team/alan-foto.jpeg"
+                                                    alt="Alan Carrillo">
                                             </div>
                                             <div class="card-body">
                                                 <h5>Alan Carrillo Morin</h5>
@@ -248,8 +333,8 @@
                                             <div class="card-body">
                                                 <h5>Carlos Enrique Cruz Guerrero</h5>
                                                 <p class="text-muted">Desarrollador Java Full Stack</p>
-                                                <a href="https://www.linkedin.com/in/carlosenriquecruz/"
-                                                    target="_blank" class="btn btn-primary btn-sm">LinkedIn</a>
+                                                <a href="https://www.linkedin.com/in/carlosenriquecruz/" target="_blank"
+                                                    class="btn btn-primary btn-sm">LinkedIn</a>
                                             </div>
                                         </div>
                                     </div>
@@ -324,8 +409,8 @@
                                             <div class="card-body">
                                                 <h5>Mauricio Saúl Ortega Jiménez</h5>
                                                 <p class="text-muted">Desarrollador Java Full Stack</p>
-                                                <a href="https://www.linkedin.com/in/mauricio-ortegaj"
-                                                    target="_blank" class="btn btn-primary btn-sm">LinkedIn</a>
+                                                <a href="https://www.linkedin.com/in/mauricio-ortegaj" target="_blank"
+                                                    class="btn btn-primary btn-sm">LinkedIn</a>
                                             </div>
                                         </div>
                                     </div>
